@@ -1,0 +1,168 @@
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex: 1;
+}
+/* navbar */
+.navbar{
+    height:5rem;
+    background-color: white;
+}
+
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color: #222222 !important;
+}
+
+/* footer */
+.f-info-links{
+    gap:10px
+}
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+    color: #151515;
+}
+
+.f-info {
+    display: flex;
+    height: 8rem;
+    background-color: #ebebee;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+    text-align: center;
+  }
+  .f-info-links,
+  .f-info-socials,
+  .f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.f-info-socials i{
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+
+
+/* cards */
+.listing-card{
+    border: none !important;
+    margin: 0.8rem;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text{
+    font-weight: 400;
+}
+
+
+.listing_link{
+    text-decoration: none; 
+} 
+/* card effect */
+ .card-img-overlay{
+    opacity: 0 !important;
+}
+.card-img-overlay:hover{
+    opacity: 0.2 !important;
+    background-color: white !important; 
+} 
+
+/* new page */
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+    width: 80px;
+}
+
+.add-btn:hover{
+    background-color: #ee3c45;
+}
+/* edit page */
+.edit-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+    width: 80px;
+}
+.edit-btn:hover{
+    background-color: #ee3c45 !important;
+}
+
+/* show page */
+.show-img{
+    height: 30vh !important;
+}
+
+.btns{
+    display: flex;
+}
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* map */
+#map {
+    height: 300px;
+    width: 80vh;
+}
+
+@media (max-width: 600px) {
+    HTML,
+    body {
+      width: 100%;
+      overflow-x: hidden;
+      offset: none;
+    }
+  
+    .container-fluid {
+      background-color: rgb(240, 238, 238);
+      color: white;
+      gap: 10px;
+    }
+  
+    #show-body {
+      width: 180% !important;
+      margin-left: -130px;
+    }
+  
+    #comments {
+      width: 70% !important;
+    }
+  
+    #card-body {
+      width: 70% !important;
+    }
+  
+    #map {
+      width: 200px;
+    }
+  }
